@@ -106,8 +106,8 @@ MFA_SUPPORTED_TYPES = [
     "totp",
     "recovery_codes",
 ]
-MFA_PASSKEY_LOGIN_ENABLED = True
-MFA_PASSKEY_SIGNUP_ENABLED = True
+# MFA_PASSKEY_LOGIN_ENABLED = True
+# MFA_PASSKEY_SIGNUP_ENABLED = True
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
