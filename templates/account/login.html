@@ -23,14 +23,14 @@
             {% slot body %}
                 {% csrf_token %}
                 {{form.non_field_errors}}
-                    <div class="data">
-                        <label>Username</label>
-                        {{form.login}}
+                    <div class="mb-1">
+                        <label class="form-label">Username</label>
+                        <input type="text" class="form-control" name="login" required />
                         {{form.login.errors}}
                     </div>
-                    <div class="data">
-                        <label>Password</label>
-                        {{form.password}}
+                    <div class="mb-1">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" required />
                         {{form.password.errors}}
                     </div>
                     {{form.captcha}}

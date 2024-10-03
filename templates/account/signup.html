@@ -22,33 +22,32 @@
             {% slot body %}
                 {% csrf_token %}
                 {{form.non_field_errors}}
-                    <div class="data">
-                        <label>Username</label>
-                        <input type="text" name="username" required />
+                
+                    <div class="mb-1">
+                        <label class="form-label">Username</label>
+                        <input type="text" class="form-control" name="username" required />
                         {{form.username.errors}}
                     </div>
-                    <div class="data">
-                        <label>Email</label>
-                        <input type="email" name="email" required />
+                    <div class="mb-1">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" name="email" required />
                         {{form.email.errors}}
-                    </div>
-                    <div class="data">
-                        <label>Password</label>
-                        <input type="password" name="password1" required />
+                      </div>
+                  
+                    <div class="mb-1">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password1" required />
                         {{form.password1.errors}}
                     </div>
-                    <div class="data">
-                        <label>Confirm Password</label>
-                        <input type="password" name="password2" required />
+                    <div class="mb-1">
+                        <label class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" name="password2" required />
                         {{form.password2.errors}}
                     </div>
                     <div>
                         {{form.captcha}}
                     </div>
-                    <div class="btn">
-                        <div class="inner"></div>
-                        <button type="submit">Signup</button>
-                    </div>
+                   
                 {{ redirect_field }}
 
             {% endslot %}

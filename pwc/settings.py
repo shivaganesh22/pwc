@@ -44,9 +44,9 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'allauth.mfa',
-     "allauth.usersessions",
-     'django.contrib.humanize',
-     "captcha",
+    "allauth.usersessions",
+    'django.contrib.humanize',
+    "captcha",
 ]
 AUTHENTICATION_BACKENDS = ("allauth.account.auth_backends.AuthenticationBackend",)
 RECAPTCHA_PUBLIC_KEY = '6LciX1YqAAAAAEabHig-jxTlRgbEweRaqKim0acy'
